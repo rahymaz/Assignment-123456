@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
     font-family: 'Poppins', 'sans-serif';
 }
 
@@ -58,6 +57,12 @@
 
 .navlinks ul a:hover {
     opacity: .5;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
 }
 
 .button-groups {
