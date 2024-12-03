@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background: #333;
+}
+
+.container {
+    animation: float 4s ease-in-out infinite;
+}
+
+.link {
+    transition: .3s ease-in-out;
+}
+
+.link {
+    color: #fff;
+}
+
+.mini-navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 15rem;
+    background: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.assignment1 {
+    color: #fff;
+}
+
+.link a {
+    text-decoration: none;
+    color: #0065FE;
+}
+
+.link:hover {
+    opacity: .7;
+    transform: translateX(-10px);
+}
+
+.card {
+    position: relative;
+    width: 40%;
+    background: #fff;
+    color: #333;
+    border-radius: 1rem;
+    padding: 10rem 3rem 2.5rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 12rem auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.card p {
+    line-height: 1.9;
+    font-size: 1.5rem;
+}
+
+.card-heading {
+    position: absolute;
+    width: 70%;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    background: rgb(255, 122, 166);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 55%;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 68%;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+
+    .mini-navbar {
+        padding: 2rem 5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 90%;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+
+    .mini-navbar {
+        padding: 2rem 2rem;
+    }
+}
